@@ -7,7 +7,11 @@ const FeedbackOptions = ({onLeaveFeedback, options}) => {
         <List>
             {Object.keys(options).map(option => (
                 <li key={option}>
-                    <Btn type='button' onClick={() => onLeaveFeedback(option)} style={{textTransform: 'capitalize'}}>{option}</Btn>
+                    <Btn type='button' 
+                         onClick={() => onLeaveFeedback(option)} 
+                         style={{textTransform: 'capitalize'}}>
+                                    {option}
+                    </Btn>
                 </li>)
         )}
         </List>
